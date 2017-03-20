@@ -9,6 +9,7 @@ import java.math.RoundingMode;
 
 /**
  * Created by traitorwtf on 20.03.2017.
+ * 
  */
 public class Calculator {
     JFrame frame;
