@@ -30,7 +30,7 @@ public class MainClass {
     static final Color FOOD_COLOR = Color.green;
     static final Color POISON_COLOR = Color.red;
 
-    static Snake snake = new Snake(START_SNAKE_X, START_SNAKE_Y, START_SNAKE_SIZE, START_DIRECTION);;
+    static Snake snake = new Snake(START_SNAKE_X, START_SNAKE_Y, START_SNAKE_SIZE, START_DIRECTION);
     static Food food = new Food();
     static Random random = new Random();
 
