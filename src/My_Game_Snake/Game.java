@@ -39,7 +39,7 @@ public class Game {
 
     static boolean isOver = false;
 
-    public static int foodCount = 0;
+    static int foodCount = 0;
 
     static Snake snake = new Snake(START_SNAKE_X, START_SNAKE_Y, START_SNAKE_SIZE, START_DIRECTION);
     static Food food = new Food();
