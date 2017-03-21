@@ -11,7 +11,7 @@ import java.awt.event.KeyEvent;
  */
 public class Game {
 
-    private final String GAME_TITLE = "Game Snake";
+    private final String GAME_TITLE = "Game Snake ver. 1.00";
     static final String GAME_OVER_MSG = "Game Over";
 
     static final int BLOCK_SIZE = 20; // in pixels
