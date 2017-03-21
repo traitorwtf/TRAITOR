@@ -9,7 +9,7 @@ import java.math.RoundingMode;
 
 /**
  * Created by traitorwtf on 20.03.2017.
- * 
+ *
  */
 public class Calculator {
     JFrame frame;
@@ -174,6 +174,7 @@ public class Calculator {
             value = "";
             score.setText(value);
 
+
             fraction = false;
             plus = false;
             minus = false;
@@ -262,10 +263,11 @@ public class Calculator {
                 resultInt = result.intValue();
                 String resInt = "" + resultInt;
                 score.setText(resInt);
-                resInt = "";
             } else {
                 score.setText(result.toString());
             }
+            value = result.toString();
+
             fraction = false;
             plus = false;
             minus = false;
