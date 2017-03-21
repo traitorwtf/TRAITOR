@@ -55,7 +55,7 @@ public class Snake{
     }
 
     boolean snakeFoundFood(Food food){
-        return (snake.get(0).getX() == food.getX() && snake.get(0).getY() == food.getY());
+        return ((snake.get(0).getX() == food.getX()) && (snake.get(0).getY() == food.getY()));
 
     }
 

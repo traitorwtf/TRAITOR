@@ -19,8 +19,14 @@ public class Food extends Block {
             setXY(-1,-1);
             int x = random.nextInt(Game.FIELD_WIDTH);
             int y = random.nextInt(Game.FIELD_HEIGHT);
-            if (Game.snake.snakeAteHerself(x,y)) next();
-            setXY(x, y);
+            if (Game.snake.snakeAteHerself(x,y) && x>=1 && y>=1) setXY(x-1,y-1);
+            else setXY(x, y);
+
+        /*do{
+            x = random.nextInt(Game.FIELD_WIDTH);
+            y = random.nextInt(Game.FIELD_HEIGHT);
+        } while (Game.snake.snakeAteHerself(x,y));
+        this.setXY(x,y);*/
     }
 
 
