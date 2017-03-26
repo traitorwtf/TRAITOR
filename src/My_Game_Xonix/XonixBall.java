@@ -12,16 +12,22 @@ public class XonixBall {
     Random random = new Random();
 
     int dx, dy;
-    int startPositionX = ThreadLocalRandom.current().nextInt(XonixField.groundSize+1,
-            XonixGame.FIELD_WIDTH-XonixField.groundSize-1);
-    int startPositionY = ThreadLocalRandom.current().nextInt(XonixField.groundSize+1,
-            XonixGame.FIELD_HEIGHT-XonixField.groundSize-1);;
-    int x = startPositionX;
-    int y = startPositionY;
+    int x, y;
+
 
     XonixBall(){
+        initialize();
         dx = random.nextBoolean() ? 1 : -1;
         dy = random.nextBoolean() ? 1 : -1;
+
+    }
+    void initialize(){
+        int x0 = ThreadLocalRandom.current().nextInt(XonixField.groundSize+1,
+                XonixGame.FIELD_WIDTH-XonixField.groundSize-1);
+        int y0 = ThreadLocalRandom.current().nextInt(XonixField.groundSize+1,
+                XonixGame.FIELD_HEIGHT-XonixField.groundSize-1);
+        x = x0;
+        y = y0;
     }
 
     public int getX() {

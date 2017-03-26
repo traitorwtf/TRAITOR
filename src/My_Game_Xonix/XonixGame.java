@@ -37,7 +37,8 @@ public class XonixGame {
 
     static XonixField gameField = new XonixField();
     static XonixPlayer player = new XonixPlayer();
-    static XonixBall ball = new XonixBall();
+    //static XonixBall ball = new XonixBall();
+    static XonixBalls balls = new XonixBalls();
 
     static boolean gameIsOver;
     static boolean youWon;
@@ -79,7 +80,7 @@ public class XonixGame {
     void gameLoop(){
         while(!gameIsCompletlyOver){
             player.move();
-            ball.move();
+            balls.move();
             try {
                 Thread.sleep(GAME_DELAY);
             } catch (InterruptedException e) {
@@ -88,7 +89,7 @@ public class XonixGame {
             if (youWon){
                 gameField.initialize();
                 player.initialize();
-                new XonixBall();
+                new XonixBalls();
                 XonixField.percentOfFilledWater = 0;
                 try {
                     Thread.sleep(500);
@@ -100,7 +101,7 @@ public class XonixGame {
             if (gameIsOver){
                 gameField.initialize();
                 player.initialize();
-                new XonixBall();
+                balls.initialize();
                 totalLifeCount--;
                 try {
                     Thread.sleep(500);

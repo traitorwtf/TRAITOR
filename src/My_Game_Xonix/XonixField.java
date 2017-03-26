@@ -64,7 +64,10 @@ public class XonixField {
 
     void tryingToFillWater(){
         tempWaterArea = 0;
-        fillingWater(XonixGame.ball.getX(), XonixGame.ball.getY());
+        for (XonixBall ball: XonixBalls.Balls){
+            fillingWater(ball.getX(), ball.getY());
+        }
+
         for (int y = 0; y < XonixGame.FIELD_HEIGHT; y++) {
             for (int x = 0; x < XonixGame.FIELD_WIDTH; x++) {
                 if (field[x][y] == XonixGame.COLOR_TRACE || field[x][y] == XonixGame.COLOR_WATER) {
