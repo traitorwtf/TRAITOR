@@ -96,6 +96,7 @@ public class Game {
             for (int dy = -1; dy < 2; dy++) openCells(x + dx, y + dy);
     }
 
+    //Checking if Flags are set on the right position and number of Flags equals to the number of Mines
     void checkWinCondition(){
         int winningCount = 0;
         for (int y = 0; y < FIELD_SIZE; y++){

@@ -16,7 +16,7 @@ public class Canvas extends JPanel{
             }
         }
         if (Game.gameOver){
-            g.setColor(Color.red);
+            g.setColor(Color.magenta);
             Font font = new Font("Comic Sans MS", Font.BOLD, 32);
             g.setFont(font);
             FontMetrics fm = g.getFontMetrics();
@@ -24,7 +24,7 @@ public class Canvas extends JPanel{
         } else {
 
             if (Game.youWon) {
-                g.setColor(Color.red);
+                g.setColor(Color.magenta);
                 Font font = new Font("Comic Sans MS", Font.BOLD, 32);
                 g.setFont(font);
                 FontMetrics fm = g.getFontMetrics();
