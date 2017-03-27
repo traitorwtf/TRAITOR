@@ -20,6 +20,15 @@ public class XonixPlayer {
         y = 0;
     }
 
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+
     void move() {
         if (direction == XonixGame.LEFT) {
             x--;

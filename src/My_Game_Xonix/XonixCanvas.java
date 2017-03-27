@@ -14,6 +14,7 @@ public class XonixCanvas extends JPanel {
         XonixGame.gameField.paint(g);
         XonixGame.player.paint(g);
         XonixGame.balls.paint(g);
+        XonixGame.cube.paint(g);
 
         if (XonixGame.gameIsCompletlyOver){
             g.setColor(Color.red);
