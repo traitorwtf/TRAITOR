@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<report number="1234">
+    <employers department="IT">
+        <employee number="1">
+            <name>Do Min Jun</name>
+            <age>28</age>
+            <salary currency="USD">3500</salary>
+        </employee>
+
+        <employee number="2">
+            <name>Haruki Makimura</name>
+            <age>62</age>
+            <salary currency="EUR">5200</salary>
+        </employee>
+
+        <employee number="3">
+            <name>Minato Riku</name>
+            <age>21</age>
+            <salary currency="RUR">250000</salary>
+        </employee>
+
+        <employee number="4">
+            <name>Leeroy Jenkins</name>
+            <age>45</age>
+            <salary currency="JPY">1200000</salary>
+        </employee>
+    </employers>
+</report>
